@@ -29,6 +29,7 @@ services:
             - addResource(Admin:Dashboard)
             - addResource(Admin:Sign)
             - addResource(Admin:Category)
+            - addResource(Admin:Item)
             - allow(admin)
             - allow(guest, Error)
             - allow(guest, Admin:Sign)

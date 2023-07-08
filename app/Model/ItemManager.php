@@ -67,6 +67,7 @@ class ItemManager extends DatabaseManager
             'url' => $values['url'],
             'short_description' => $values['short_description'],
             'description' => $values['description'],
+            'price' => $values['price']
         ];
 
         if (!empty($values['picture']) && $values['picture']->isOk()) {
