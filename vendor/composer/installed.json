@@ -90,17 +90,17 @@
         },
         {
             "name": "nette/application",
-            "version": "v3.1.10",
-            "version_normalized": "3.1.10.0",
+            "version": "v3.1.11",
+            "version_normalized": "3.1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/application.git",
-                "reference": "9c31b24407623437c1e1345cc2bd4e210b290135"
+                "reference": "b03bd4971b03e3fa582ac40ea429446cd00788bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/application/zipball/9c31b24407623437c1e1345cc2bd4e210b290135",
-                "reference": "9c31b24407623437c1e1345cc2bd4e210b290135",
+                "url": "https://api.github.com/repos/nette/application/zipball/b03bd4971b03e3fa582ac40ea429446cd00788bb",
+                "reference": "b03bd4971b03e3fa582ac40ea429446cd00788bb",
                 "shasum": ""
             },
             "require": {
@@ -134,7 +134,7 @@
                 "latte/latte": "Allows using Latte in templates",
                 "nette/forms": "Allows to use Nette\\Application\\UI\\Form"
             },
-            "time": "2023-01-17T13:52:03+00:00",
+            "time": "2023-04-28T10:09:21+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -179,7 +179,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/application/issues",
-                "source": "https://github.com/nette/application/tree/v3.1.10"
+                "source": "https://github.com/nette/application/tree/v3.1.11"
             },
             "install-path": "../nette/application"
         },
@@ -696,17 +696,17 @@
         },
         {
             "name": "nette/http",
-            "version": "v3.2.1",
-            "version_normalized": "3.2.1.0",
+            "version": "v3.2.2",
+            "version_normalized": "3.2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/http.git",
-                "reference": "0e16cd4f911665679b96bf569318a0dc7f087eda"
+                "reference": "9105c26de3dd47da5e7cf6b4132b5d871f835e25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/http/zipball/0e16cd4f911665679b96bf569318a0dc7f087eda",
-                "reference": "0e16cd4f911665679b96bf569318a0dc7f087eda",
+                "url": "https://api.github.com/repos/nette/http/zipball/9105c26de3dd47da5e7cf6b4132b5d871f835e25",
+                "reference": "9105c26de3dd47da5e7cf6b4132b5d871f835e25",
                 "shasum": ""
             },
             "require": {
@@ -727,7 +727,7 @@
             "suggest": {
                 "ext-fileinfo": "to detect type of uploaded files"
             },
-            "time": "2022-12-05T00:03:40+00:00",
+            "time": "2023-03-18T14:55:56+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -771,7 +771,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/http/issues",
-                "source": "https://github.com/nette/http/tree/v3.2.1"
+                "source": "https://github.com/nette/http/tree/v3.2.2"
             },
             "install-path": "../nette/http"
         },
@@ -922,17 +922,17 @@
         },
         {
             "name": "nette/php-generator",
-            "version": "v4.0.6",
-            "version_normalized": "4.0.6.0",
+            "version": "v4.0.7",
+            "version_normalized": "4.0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/php-generator.git",
-                "reference": "0f1275bb8d39b3eb92b57c22a51fe693f1f145a5"
+                "reference": "de1843fbb692125e307937c85d43937d0dc0c1d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/php-generator/zipball/0f1275bb8d39b3eb92b57c22a51fe693f1f145a5",
-                "reference": "0f1275bb8d39b3eb92b57c22a51fe693f1f145a5",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/de1843fbb692125e307937c85d43937d0dc0c1d4",
+                "reference": "de1843fbb692125e307937c85d43937d0dc0c1d4",
                 "shasum": ""
             },
             "require": {
@@ -949,7 +949,7 @@
             "suggest": {
                 "nikic/php-parser": "to use ClassType::from(withBodies: true) & ClassType::fromCode()"
             },
-            "time": "2023-03-13T17:38:30+00:00",
+            "time": "2023-04-26T15:09:53+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -988,7 +988,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/php-generator/issues",
-                "source": "https://github.com/nette/php-generator/tree/v4.0.6"
+                "source": "https://github.com/nette/php-generator/tree/v4.0.7"
             },
             "install-path": "../nette/php-generator"
         },
@@ -1434,6 +1434,55 @@
             "install-path": "../nette/utils"
         },
         {
+            "name": "nittro/nette-bridges",
+            "version": "v2.1.6",
+            "version_normalized": "2.1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nittro/nette-bridges.git",
+                "reference": "2e8d5c353969738c6399c2b01d0b377c376a2b86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nittro/nette-bridges/zipball/2e8d5c353969738c6399c2b01d0b377c376a2b86",
+                "reference": "2e8d5c353969738c6399c2b01d0b377c376a2b86",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "latte/latte": "^2.10",
+                "nette/application": "^3.1.5",
+                "nette/di": "^3.0"
+            },
+            "time": "2021-12-31T17:18:58+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Kadera",
+                    "email": "me@subsonic.cz"
+                }
+            ],
+            "description": "Nittro PHP bridges",
+            "homepage": "https://www.nittro.org/",
+            "support": {
+                "issues": "https://github.com/nittro/nette-bridges/issues",
+                "source": "https://github.com/nittro/nette-bridges/tree/v2.1.6"
+            },
+            "install-path": "../nittro/nette-bridges"
+        },
+        {
             "name": "symfony/thanks",
             "version": "v1.2.10",
             "version_normalized": "1.2.10.0",
@@ -1498,18 +1547,69 @@
             "install-path": "../symfony/thanks"
         },
         {
-            "name": "tracy/tracy",
-            "version": "v2.10.0",
-            "version_normalized": "2.10.0.0",
+            "name": "tomaj/nette-bootstrap-form",
+            "version": "2.0.1",
+            "version_normalized": "2.0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nette/tracy.git",
-                "reference": "e580b9578858403762fceb2a8664550515167530"
+                "url": "https://github.com/tomaj/nette-bootstrap-form.git",
+                "reference": "c4aeee158ede5c64cf2dab588ee181135b8b2e92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/e580b9578858403762fceb2a8664550515167530",
-                "reference": "e580b9578858403762fceb2a8664550515167530",
+                "url": "https://api.github.com/repos/tomaj/nette-bootstrap-form/zipball/c4aeee158ede5c64cf2dab588ee181135b8b2e92",
+                "reference": "c4aeee158ede5c64cf2dab588ee181135b8b2e92",
+                "shasum": ""
+            },
+            "require": {
+                "nette/forms": "^3.0",
+                "php": ">= 7.1.0"
+            },
+            "time": "2022-01-11T10:41:18+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Tomas Majer",
+                    "email": "tomasmajer@gmail.com",
+                    "homepage": "http://www.tomaj.sk/"
+                }
+            ],
+            "description": "Nette bootstrap form renderer",
+            "keywords": [
+                "bootstrap",
+                "form",
+                "nette",
+                "renderer"
+            ],
+            "support": {
+                "issues": "https://github.com/tomaj/nette-bootstrap-form/issues",
+                "source": "https://github.com/tomaj/nette-bootstrap-form/tree/2.0.1"
+            },
+            "install-path": "../tomaj/nette-bootstrap-form"
+        },
+        {
+            "name": "tracy/tracy",
+            "version": "v2.10.2",
+            "version_normalized": "2.10.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/tracy.git",
+                "reference": "882fee7cf4258a602ad4a37461e837ed2ca1406b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/882fee7cf4258a602ad4a37461e837ed2ca1406b",
+                "reference": "882fee7cf4258a602ad4a37461e837ed2ca1406b",
                 "shasum": ""
             },
             "require": {
@@ -1529,7 +1629,7 @@
                 "phpstan/phpstan": "^1.0",
                 "psr/log": "^1.0 || ^2.0 || ^3.0"
             },
-            "time": "2023-03-09T00:37:06+00:00",
+            "time": "2023-03-29T12:34:53+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1570,7 +1670,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/tracy/issues",
-                "source": "https://github.com/nette/tracy/tree/v2.10.0"
+                "source": "https://github.com/nette/tracy/tree/v2.10.2"
             },
             "install-path": "../tracy/tracy"
         }

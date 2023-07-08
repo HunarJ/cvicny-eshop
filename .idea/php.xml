@@ -24,6 +24,8 @@
       <path value="$PROJECT_DIR$/vendor/nette/tester" />
       <path value="$PROJECT_DIR$/vendor/nette/http" />
       <path value="$PROJECT_DIR$/vendor/nette/application" />
+      <path value="$PROJECT_DIR$/vendor/nittro/nette-bridges" />
+      <path value="$PROJECT_DIR$/vendor/tomaj/nette-bootstrap-form" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

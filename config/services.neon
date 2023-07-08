@@ -4,7 +4,12 @@ search:
 		classes:
 			- *Factory
 			- *Facade
-
+security:
+    roles:
+        guest:
+        member: [guest]
+        admin:
 
 services:
-	- App\Router\RouterFactory::createRouter
+	router: App\Router\RouterFactory::createRouter
+	authenticator: App\Model\UserManager
