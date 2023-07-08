@@ -1,0 +1,48 @@
+{* Latte template *}
+
+{block content}
+<div class="row">
+    <div class="col-xl-12 col-lg-8">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Seznam položek</h6>
+            </div>
+            <div class="card-body">
+
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Název položky</th>
+                        <th scope="col">Krátký popis</th>
+                        <th scope="col">Cena</th>
+                        <th scope="col">Akce</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr n:foreach="$items as $item">
+                        <td>
+                            {$item->id}
+                        </td>
+                        <td>
+                            {$item->title}
+                        </td>
+                        <td>
+                            {$item->short_description}
+                        </td>
+                        <td>
+                            {$item->price} Kč
+                        </td>
+
+                        <td>
+                            <a n:href="editor $item->url" class="btn btn-xs btn-primary pull-right" title="Upravit položku"><i class="far fa-edit"></i></a>
+                            <a n:href="remove $item->url" class="btn btn-xs btn-danger pull-right" title="Odstranit položku"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
