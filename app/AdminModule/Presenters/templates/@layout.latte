@@ -9,9 +9,9 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="ArgoMi.cz">
+    <meta name="author" content="ceshop.cz">
 
-    <title>{ifset title}{include title|stripHtml} | {/ifset}ArgoMi - RS</title>
+    <title>{ifset title}{include title|stripHtml} | {/ifset}Cvičný e-shop</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{$basePath}/fontawesome-free/css/all.min.css">
@@ -117,7 +117,7 @@
             </nav>
             <div class="container-fluid">
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">ArgoMi - RS</h1>
+                    <h1 class="h3 mb-0 text-gray-800">Cvičný e-shop</h1>
                 </div>
                 <div n:foreach="$flashes as $flash" n:class="alert, 'alert-' . $flash->type">{$flash->message}</div>
 
@@ -127,7 +127,7 @@
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; ArgoMi v1.0.0 {="now"|date:'Y'}</span>
+                    <span>Jan Huňař {="now"|date:'Y'}</span>
                 </div>
             </div>
         </footer>

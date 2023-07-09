@@ -17,6 +17,7 @@
                         <th scope="col">Název položky</th>
                         <th scope="col">Krátký popis</th>
                         <th scope="col">Cena</th>
+                        <th scope="col">Kategorie</th>
                         <th scope="col">Akce</th>
                     </tr>
                     </thead>
@@ -33,6 +34,9 @@
                         </td>
                         <td>
                             {$item->price} Kč
+                        </td>
+                        <td>
+                            {$categories[$item->category_id]}
                         </td>
 
                         <td>
