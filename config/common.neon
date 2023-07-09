@@ -15,7 +15,10 @@ di:
 	export:
 		parameters: no
 		tags: no
-
+# Register Nittro Latte macros
+latte:
+    macros:
+        - Nittro\Bridges\NittroLatte\NittroMacros
 services:
     - App\Forms\FormFactory
     - App\Forms\SignInFormFactory
@@ -31,6 +34,8 @@ services:
             - addResource(Admin:Category)
             - addResource(Admin:Item)
             - addResource(Admin:User)
+            - addResource(Eshop:Homepage)
+            - addResource(Eshop:Item)
             - allow(admin)
             - allow(guest, Error)
             - allow(guest, Admin:Sign)

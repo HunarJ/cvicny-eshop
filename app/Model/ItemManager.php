@@ -56,6 +56,15 @@ class ItemManager extends DatabaseManager
         return $items;
     }
 
+    public function getItemsByCategory(int $categoryId): Selection
+    {
+        $items = $this->database->table(self::TABLE_NAME)
+            ->where('category_id', $categoryId);
+
+        return $items;
+
+    }
+
     public function getAllItems(): Selection {
         return $this->database->table(self::TABLE_NAME)->order(self::COLUMN_ID . ' DESC');
     }
@@ -67,7 +76,8 @@ class ItemManager extends DatabaseManager
             'url' => $values['url'],
             'short_description' => $values['short_description'],
             'description' => $values['description'],
-            'price' => $values['price']
+            'price' => $values['price'],
+            'category_id' =>$values['category_id']
         ];
 
         if (!empty($values['picture']) && $values['picture']->isOk()) {
@@ -77,7 +87,7 @@ class ItemManager extends DatabaseManager
         if (!empty($values['id'])) {
             $itemCategoryData = [
                 'item_id' => $values['id'],
-                'category_id' => $values['categories'],
+                'category_id' => $values['category_id'],
             ];
             $item = $this->database->table('items')
                 ->wherePrimary($values['id']);
@@ -96,7 +106,7 @@ class ItemManager extends DatabaseManager
             $item_id = $item->id;
             $itemCategoryData = [
                 'item_id' => $item_id,
-                'category_id' => $values['categories'],
+                'category_id' => $values['category_id'],
             ];
         }
 
@@ -106,7 +116,7 @@ class ItemManager extends DatabaseManager
             $im->resize(900, 400, Image::Cover);
             $im->save(sprintf('%s/%d.jpg', $this->picturePath, $item->id), 90, Image::JPEG);
         }
-        if (!empty($values['categories'])) {
+        if (!empty($values['category_id'])) {
             $this->database->table('item_category')->insert($itemCategoryData);
         }
 

@@ -18,8 +18,10 @@ final class RouterFactory
         $router[] = $module = new RouteList('Admin');
         $module->addRoute('admin/<presenter>/<action>', 'Dashboard:default');
 
-        $router[] = $module = new RouteList('Front');
+        $router[] = $module = new RouteList('Eshop');
         $module->addRoute('<presenter>/<action>', 'Homepage:default');
+        $module->addRoute('item/<id>', 'Item:detail');
+        $module->addRoute('<url>', 'Item:default');
         return $router;
 	}
 }

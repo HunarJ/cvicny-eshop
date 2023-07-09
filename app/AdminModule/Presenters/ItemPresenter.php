@@ -28,6 +28,7 @@ class ItemPresenter extends BaseAdminPresenter
     public function renderList()
     {
         $this->template->items = $this->itemManager->getAllItems();
+        $this->template->categories = $this->categoryManager->getAllCategory();
     }
 
     public function actionRemove(string $url = null)
@@ -67,7 +68,7 @@ class ItemPresenter extends BaseAdminPresenter
             ->setRequired();
         $form->addTextArea('description', 'Obsah');
         $categories = $this->categoryManager->getAllCategory();
-        $form->addSelect('categories', 'Kategorie:', $categories)
+        $form->addSelect('category_id', 'Kategorie:', $categories)
             ->setPrompt('Zvolte kategorii');
 
         $form->addText('price', 'Cena')->setRequired();

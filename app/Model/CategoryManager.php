@@ -74,4 +74,8 @@ class CategoryManager extends DatabaseManager
             $this->database->table(self::TABLE_NAME)->where(self::COLUMN_ID, $category[self::COLUMN_ID])->update($category);
         }
     }
+
+    public function getCategoryCount() {
+        return $this->database->table(self::TABLE_NAME)->count('*');
+    }
 }
