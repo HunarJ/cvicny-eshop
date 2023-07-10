@@ -1,0 +1,30 @@
+{block content}
+{var $i = 0}
+<h2 class="my-5">Košík</h2>
+
+<div class="container">
+    {foreach $itemsInCart as $item}
+        <div class="row my-3">
+            <div class="col-6 ">
+                {$item->title}
+            </div>
+            <div class="col-3">
+                {$item->price} Kč
+            </div>
+            <div class="col-3">
+                {var $i = $i + 1}
+                <a href="{link 'removeFromCart!', $i - 1}" class="btn btn-xs btn-danger pull-right" title="Odstranit položku"><i class="fas fa-trash-alt"></i></a>
+            </div>
+        </div>
+        <hr>
+    {/foreach}
+    <div class="row my-3">
+        <div class="col-6">
+            <h3>Cena k zaplacení</h3>
+        </div>
+        <div class="col-3">
+            <h3>{$totalPrice} Kč</h3>
+        </div>
+    </div>
+
+</div>

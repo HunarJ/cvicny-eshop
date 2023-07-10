@@ -5,6 +5,7 @@ namespace App\EshopModule\Presenters;
 
 
 use App\Model\ItemManager;
+use Nette\Http\Session;
 
 class ItemPresenter extends BaseEshopPresenter
 {
@@ -13,15 +14,29 @@ class ItemPresenter extends BaseEshopPresenter
 
     private ItemManager $itemManager;
 
-    public function __construct(ItemManager $itemManager)
+    private Session $session;
+
+    public $cart;
+
+    public function __construct(ItemManager $itemManager, Session $session)
     {
         parent::__construct();
         $this->itemManager = $itemManager;
+        $this->session = $session;
     }
 
     public function actionDetail(int $id)
     {
         $this->item_id = $id;
+    }
+
+    public function handleAddToCart(array $itemId)
+    {
+        $this->cart = $this->session->getSection('cart');
+        $this->cart->items[] = $itemId;
+        $this->flashMessage('Položka přidána do košíku');
+        bdump($this->cart->items);
+        $this->redirect('this');
     }
 
     public function renderDefault(string $url)
