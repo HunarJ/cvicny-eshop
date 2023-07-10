@@ -1,0 +1,19 @@
+{* Latte template *}
+
+{block content}
+
+<h1 class="my-4">{$item->title}</h1>
+
+<!-- Blog Post -->
+<div class="card mb-4">
+    {if $item->has_picture}
+        <img class="card-img-top" src="{$basePath}/images/articles/{$item->id}.jpg?{time()}" alt="{$item->title}">
+    {/if}
+        <div class="card-body">
+            <h2 class="card-title">{$item->title}</h2>
+            <p class="card-text">{$item->description|noescape}</p>
+        </div>
+        <div class="card-footer text-muted">
+            Publikováno: {$item->date_add|date:'j. n. Y'}
+        </div>
+</div>

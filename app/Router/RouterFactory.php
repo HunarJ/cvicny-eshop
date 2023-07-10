@@ -22,6 +22,7 @@ final class RouterFactory
         $module->addRoute('<presenter>/<action>', 'Homepage:default');
         $module->addRoute('item/<id>', 'Item:detail');
         $module->addRoute('<url>', 'Item:default');
+       // $module->addRoute('item/addToSession/<data>', 'Item:addToSession');
         return $router;
 	}
 }
