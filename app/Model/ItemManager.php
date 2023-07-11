@@ -113,7 +113,7 @@ class ItemManager extends DatabaseManager
         if (!empty($values['picture']) && $values['picture']->isOk()) {
             /** @var Image $im */
             $im = $values['picture']->toImage();
-            $im->resize(900, 400, Image::Cover);
+            $im->resize(900, 700, Image::Cover);
             $im->save(sprintf('%s/%d.jpg', $this->picturePath, $item->id), 90, Image::JPEG);
         }
         if (!empty($values['category_id'])) {

@@ -5,15 +5,27 @@
 <h1 class="my-4">{$item->title}</h1>
 
 <!-- Blog Post -->
-<div class="card mb-4">
-    {if $item->has_picture}
-        <img class="card-img-top" src="{$basePath}/images/articles/{$item->id}.jpg?{time()}" alt="{$item->title}">
-    {/if}
-        <div class="card-body">
-            <h2 class="card-title">{$item->title}</h2>
-            <p class="card-text">{$item->description|noescape}</p>
+
+
+<div class="row">
+    <div class="col-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">{$item->title}</h2>
+                {if $item->has_picture}
+                    <img class="card-img-top" src="{$basePath}/images/items/{$item->id}.jpg?{time()}"
+                         alt="{$item->title}">
+                {/if}
+                <p class="card-text">{$item->description|noescape}</p>
+                <div class="card-footer text-muted">
+                    Publikováno: {$item->date_add|date:'j. n. Y'}
+                </div>
+            </div>
         </div>
-        <div class="card-footer text-muted">
-            Publikováno: {$item->date_add|date:'j. n. Y'}
-        </div>
+    </div>
+    <div class="col-3">
+        <h3 class="my-4">Cena: {$item->price} Kč</h3>
+        <a href="{link 'addToCart!', ['itemId' => $item->id]}" class="btn btn-primary">Do košíku</a>
+
+    </div>
 </div>
